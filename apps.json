@@ -1,16 +1,23 @@
 [
   {
-    "slug": "kalkulator",
-    "title": "Kalkulator",
-    "description": "Min private kalkulator-app",
-    "repo": "DITT_BRUKERNAVN/kalkulator",
-    "file": "index.html"
+    "slug": "bubus-lyttetrening",
+    "title": "Bubus lyttetrening",
+    "description": "Trening på å forstå muntlig norsk",
+    "repo": "sigfly/Bubus-lyttetrening",
+    "file": "Bubu-elev.html"
   },
   {
-    "slug": "dashboard",
-    "title": "Dashboard",
-    "description": "Mitt personlige dashboard",
-    "repo": "DITT_BRUKERNAVN/dashboard",
-    "file": "dashboard.html"
+    "slug": "bubus-mengdeord",
+    "title": "Bubus mengdeord",
+    "description": "Trening på norske mengdeord",
+    "repo": "sigfly/bubus-mengdeord",
+    "file": "Bubus_mengdeord.html"
+  },
+  {
+    "slug": "bubus-norsk-musikkterminologi",
+    "title": "Bubus musikkterminologi",
+    "description": "Trening på norske musikkbegreper",
+    "repo": "sigfly/bubus-norsk-musikkterminologi",
+    "file": "index.html"
   }
 ]
