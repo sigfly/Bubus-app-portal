@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "kalkulator",
+    "title": "Kalkulator",
+    "description": "Min private kalkulator-app",
+    "repo": "DITT_BRUKERNAVN/kalkulator",
+    "file": "index.html"
+  },
+  {
+    "slug": "dashboard",
+    "title": "Dashboard",
+    "description": "Mitt personlige dashboard",
+    "repo": "DITT_BRUKERNAVN/dashboard",
+    "file": "dashboard.html"
+  }
+]
