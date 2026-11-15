@@ -8,6 +8,8 @@ on:
       - "scripts/**"
       - ".github/workflows/**"
   workflow_dispatch:
+  repository_dispatch:
+    types: [app-updated]
   schedule:
     # Fire ganger i døgnet (UTC). Planlagte kjøringer kan bli forsinket.
     - cron: "17 */6 * * *"
