@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - "apps.json"
+      - "manifest.json"
+      - "icon-*.png"
+      - "apple-touch-icon.png"
       - "scripts/**"
       - ".github/workflows/**"
   workflow_dispatch:
