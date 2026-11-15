@@ -85,10 +85,10 @@ homepage = """<!DOCTYPE html>
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#fff5f8">
   <title>Bubus app-bibliotek</title>
-  <link rel="manifest" href="./manifest.json">
-  <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.json?v=2">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png?v=2">
+  <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
