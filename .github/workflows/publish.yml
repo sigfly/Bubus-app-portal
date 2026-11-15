@@ -1,0 +1,49 @@
+name: Publiser App Portal
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps.json"
+      - "scripts/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+  schedule:
+    # Fire ganger i døgnet (UTC). Planlagte kjøringer kan bli forsinket.
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "github-pages"
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Hent portal-koden
+        uses: actions/checkout@v6
+
+      - name: Konfigurer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Hent de private HTML-appene og bygg startsiden
+        env:
+          PRIVATE_REPOS_READ_TOKEN: ${{ secrets.PRIVATE_REPOS_READ_TOKEN }}
+        run: python3 scripts/build_portal.py
+
+      - name: Last opp nettstedet
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Publiser nettstedet
+        id: deployment
+        uses: actions/deploy-pages@v4
